@@ -38,11 +38,11 @@ from ryu.lib.packet import ipv6
 from ryu.lib import mac
 
 
-class SimpleARPProxy13(app_manager.RyuApp):
+class SimpleARP13(app_manager.RyuApp):
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
 
     def __init__(self, *args, **kwargs):
-        super(SimpleARPProxy13, self).__init__(*args, **kwargs)
+        super(SimpleARP13, self).__init__(*args, **kwargs)
         self.mac_to_port = {}
         self.arp_table = {}
         self.sw = {}
