@@ -22,21 +22,31 @@ OR Direct installation in the terminal
 
 # Prometheus
 wget https://github.com/prometheus/prometheus/releases/download/v2.34.0/prometheus-2.34.0.linux-amd64.tar.gz
+
 tar -zxvf prometheus-2.34.0.linux-amd64.tar.gz
+
 cd prometheus-2.34.0.linux-amd64
+
 ./prometheus --config.file=prometheus.yml or download prometheus.yml
 
 # Node Exporter
 wget https://github.com/prometheus/node_exporter/releases/download/v1.8.1/node_exporter-1.8.1.linux-amd64.tar.gz
+
 tar -zxvf node_exporter-1.8.1.linux-amd64.tar.gz
+
 cd node_exporter-1.8.1.linux-amd64
+
 Add the Node Exporter targets to prometheus.yml
+
 ./node_exporter
 
 # Grafana
 wget https://dl.grafana.com/oss/release/grafana-11.1.0.linux-amd64.tar.gz
+
 tar -zxvf grafana-11.1.0.linux-amd64.tar.gz
+
 cd grafana-11.1.0
+
 ./bin/grafana-server
 
 Start grafana or download servie2.sh 
